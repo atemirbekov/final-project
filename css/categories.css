@@ -1,0 +1,34 @@
+.categories__header {
+  margin-inline: 56px;
+  margin-bottom: 48px;
+  line-height: 125%;
+}
+.categories-list {
+  margin-inline: 56px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.categories__item {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 4px solid #e6e6e6;
+  outline-offset: 2px;
+  border-radius: 16px;
+}
+.categories__item:hover {
+  outline: 4px solid #0077b6;
+  outline-offset: 2px;
+}
+.categories__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+.categories__actions {
+  display: flex;
+  gap: 8px;
+}

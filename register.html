@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Регистрация</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="window">
+      <form class="container">
+        <img src="./img/logo.svg" alt="logo" width="152" height="40" />
+        <div class="info">
+          <div class="register-box">
+            <p class="name">Имя</p>
+            <input
+              class="name-input"
+              type="text"
+              name="name"
+              placeholder="Введите имя"
+            />
+          </div>
+          <div class="register-box">
+            <p class="email">Email</p>
+            <input
+              class="email-input"
+              type="email"
+              placeholder="Введите email"
+            />
+          </div>
+          <div class="register-box">
+            <p class="password">Пароль</p>
+            <input
+              class="password-input"
+              type="password"
+              placeholder="Введите пароль"
+            />
+          </div>
+        </div>
+
+        <button class="button button--blue login-button">
+          Зарегистрироваться
+        </button>
+        <p class="login">
+          Уже есть аккаунт?
+          <a href="./login.html" class="login-link">Войти</a>
+        </p>
+        <!-- {
+                "email": "dfh@dfgd.com",
+                "name": "string",
+                "password": "string"
+              } -->
+        <!-- {
+                "email": "gfjg@fifi.com",
+                "name": "string",
+                "password": "string"
+              } -->
+      </form>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

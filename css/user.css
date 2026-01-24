@@ -1,0 +1,22 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  outline: 4px solid #f0f0f0;
+  border-radius: 16px;
+  transition: brightness 150ms ease-in-out;
+  cursor: pointer;
+}
+.user:hover {
+  filter: brightness(90%);
+}
+.user__avatar img {
+  display: block;
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+}
+.user__name {
+  font-size: 14px;
+  line-height: 160%;
+  color: #3d3d3d;
+}
