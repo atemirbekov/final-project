@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Новости</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+    <link rel="stylesheet" href="./css/add_edit.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="./index.html" class="header__logo">
+          <img src="./img/logo.svg" alt="Логотип" />
+        </a>
+
+        <ol class="header__nav-list">
+          <li>
+            <a
+              href="./index.html"
+              class="header__nav-link header__nav-link--active"
+              aria-current="page"
+              >Новости
+            </a>
+          </li>
+          <li>
+            <a href="./categories.html" class="header__nav-link">Категории</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="header__auth">
+        <a href="./login.html" class="button button--blue">Войти</a>
+      </div>
+    </header>
+
+    <main>
+      <form class="news-container">
+        <h2 class="edit-news">Редактирование новости</h2>
+        <div class="news-box">
+          <label class="news-name" for="name-input">Название</label>
+          <input class="name-input" type="text" value="Название новости" />
+        </div>
+        <div class="news-box">
+          <label class="edit_news-category" for="category-input"
+            >Категория</label
+          >
+          <select class="category-input" name="category" required>
+            <option value="1" selected>string1</option>
+            <option value="2">Спорт</option>
+            <option value="3">Политика</option>
+          </select>
+        </div>
+        <div class="news-box">
+          <p class="news-cover">Обложка</p>
+          <div class="cover-file">
+            <label class="cover-button" for="file-input">Выбрать файл</label>
+            <span class="cover-name">image.jpg</span>
+            <input
+              class="cover-input"
+              type="file"
+              id="file-input"
+              required
+              hidden
+            />
+          </div>
+        </div>
+        <div class="news-box">
+          <label class="news-content" for="name-content">Контент</label>
+          <textarea class="content-input" cols="50" rows="8">
+Описание новости</textarea
+          >
+        </div>
+        <button class="button button--blue">Сохранить изменения</button>
+      </form>
+    </main>
+
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

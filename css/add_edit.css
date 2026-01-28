@@ -1,0 +1,105 @@
+.news-container,
+.cats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.add-news,
+.add-cats,
+.edit-news {
+  font-size: 32px;
+  line-height: 125%;
+}
+.news-box,
+.cats-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.news-name,
+.cats-name,
+.create_news-category,
+.edit_news-category,
+.news-cover,
+.news-content {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #707070;
+}
+.name-input,
+.category-input,
+.cover-file,
+.content-input {
+  font-size: 16px;
+  line-height: 150%;
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+}
+.cover-file {
+  display: flex;
+  height: 42px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cover-button {
+  padding: 10px 19px 10px 20px;
+  white-space: nowrap;
+  width: 138px;
+  height: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0077b6;
+  transition: background 0.2s;
+}
+.cover-button:hover {
+  background-color: #52b788;
+}
+.cover-name {
+  padding: 12px 16px;
+  width: 862px;
+  height: inherit;
+  font-size: 14px;
+  line-height: 125%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #e6e6e6;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #c1121f;
+}
+.category-input {
+  appearance: none;
+  background: url("../img/chevron-down.svg") no-repeat right 16px center;
+  background-size: 24px;
+  cursor: pointer;
+}
+select:required:invalid {
+  color: #bdbdbd;
+}
+select option {
+  color: #000;
+}
+.content-input {
+  font-family: unset;
+}
+.news-container button,
+.cats-container button {
+  white-space: nowrap;
+  width: fit-content;
+}

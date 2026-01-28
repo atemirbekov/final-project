@@ -16,7 +16,7 @@ async function fetchAndRenderCategories() {
 
             <div class="categories__actions">
             <a
-                href="./edit-categories.html?id=${categories.id}"
+                href="./edit-cats.html?id=${categories.id}"
                 class="button button--blue button--small"
                 >Редактировать
             </a>
@@ -29,7 +29,7 @@ async function fetchAndRenderCategories() {
             </button>
             </div>
         </div>
-        `
+        `,
       )
       .join("");
     setupActionButtonsCat();
@@ -84,8 +84,7 @@ function displayCreateButtonCat() {
     const createButton = document.createElement("button");
     createButton.className = "button button--green";
     createButton.innerHTML = '<img src="./img/add.svg" alt="plus icon" />';
-    createButton.onclick = () =>
-      (window.location.href = "./create-categories.html");
+    createButton.onclick = () => (window.location.href = "./create-cats.html");
     document.querySelector(".categories-list").before(createButton);
   }
 }

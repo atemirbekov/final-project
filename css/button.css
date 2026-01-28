@@ -10,6 +10,7 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  user-select: none;
   transition: transform 200ms ease, box-shadow 200ms ease, brightness 200ms ease;
 }
 .button:hover {

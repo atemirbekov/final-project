@@ -27,7 +27,7 @@ async function fetchAndRenderNews() {
           <h2 class="news-card__title">${news.title}</h2>
 
           <p class="news-card__attributes">${new Date(
-            news.createdAt
+            news.createdAt,
           ).toLocaleDateString("de-DE", {
             day: "2-digit",
             month: "2-digit",
@@ -69,7 +69,7 @@ async function fetchAndRenderNews() {
         </div>
       </div>
     </article>
-        `
+        `,
       )
       .join("");
     setupActionButtons();
@@ -83,7 +83,7 @@ function setupActionButtons() {
   const headerAuth = document.querySelector(".header__auth");
 
   if (authToken) {
-    document.querySelector(".header__auth").innerHTML = `
+    headerAuth.innerHTML = `
     <div class="user">
       <div class="user__avatar">
         <img
