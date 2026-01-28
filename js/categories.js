@@ -1,5 +1,37 @@
 const BASE_URL = "https://webfinalapi.mobydev.kz";
 
+async function deleteCategories(id) {
+  const authToken = localStorage.getItem("authToken");
+
+  if (!authToken) {
+    alert("Авторизуйтесь для удаления!");
+    return;
+  }
+
+  const isConfirmed = confirm(
+    "Вы уверены что хотите удалить данную категорию?",
+  );
+  if (!isConfirmed) return;
+
+  try {
+    const response = await fetch(`${BASE_URL}/category/${id}`, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${authToken}`,
+      },
+    });
+
+    if (response.ok) {
+      alert("Категория успешна удалена");
+      fetchAndRenderCategories();
+    } else {
+      alert("Ошибка при удалении категории.");
+    }
+  } catch (error) {
+    console.error("Ошибка", error);
+  }
+}
+
 async function fetchAndRenderCategories() {
   try {
     const response = await fetch(`${BASE_URL}/categories`);
